@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <body>
-    bruh
-  </body>
+<head>
+<body style="background-color:#151014;">
+<script>
+function displayEquation(a, b, c, d, e, f) {
+    document.getElementById("equation").innerHTML = '<span style="color: #aa99ff;">&xi;(x) = [ </span><span style="color: #e31111;">' + a + ' (</span> <span style="color: #00cc00;">' + b + 'x <sup>' + c + '</sup> + ' + d + 'x + ' + e + '</span><span style="color: #e31111;"> ) <sup>' + f + '</sup></span><span style="color: #aa99ff;"> ]</span>';
+}
+</script>
+</head>
+<body>
+
+<h1 id="equation"></h1>
+
+<script>
+first = Math.ceil(Math.random() * 9)
+second = Math.ceil(Math.random() * 9)
+third = Math.ceil(Math.random() * 9)
+fourth = Math.ceil(Math.random() * 9)
+fifth = Math.ceil(Math.random() * 9)
+sixth = Math.ceil(Math.random() * 9)
+displayEquation(first, second, third, fourth, fifth, sixth);
+</script>
+
+</body>
 </html>
